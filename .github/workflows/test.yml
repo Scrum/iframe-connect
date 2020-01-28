@@ -1,4 +1,4 @@
-name: Node CI
+name: CI
 
 on:
   pull_request:
@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js latest
+    - name: Use Node.js 13.x
       uses: actions/setup-node@v1
       with:
-        node-version: 'latest'
+        node-version: '13.x'
     - name: npm install, and run test
       run: |
         npm i
