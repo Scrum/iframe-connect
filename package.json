@@ -1,6 +1,6 @@
 {
   "name": "iframe-connect",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "jsdom": "^16.0.1",
     "morgan": "^1.9.1",
     "nodemon": "^2.0.2",
+    "test-listen": "^1.1.0",
     "xo": "^0.25.3"
   },
   "xo": {
