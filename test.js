@@ -10,7 +10,7 @@ test.cb('title', t => {
 			class TestIframeConnect extends dom.window.IframeConnect {
 				_listener({origin, data, source}) {
 					if (this._origin === '*' || this._origin === origin) {
-						console.log(origin, data, source, '----');
+						t.deepEqual(data, {method: 'connect'});
 						t.end();
 					}
 				}
