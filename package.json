@@ -24,6 +24,7 @@
     "envs": [
       "browser"
     ],
+    "globals": ["define"],
     "rules": {
       "import/extensions": "off",
       "no-new": "off",
