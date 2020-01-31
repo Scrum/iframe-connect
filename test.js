@@ -8,9 +8,9 @@ test.cb('title', t => {
 	}).then(dom => {
 		dom.window.document.addEventListener('DOMContentLoaded', () => {
 			class TestIframeConnect extends dom.window.IframeConnect {
-				_listener({origin, data, source}) {
+				_listener({origin, data}) {
 					if (this._origin === '*' || this._origin === origin) {
-						console.log(origin, data, source, '----');
+						t.deepEqual(data, {method: 'connect'});
 						t.end();
 					}
 				}
