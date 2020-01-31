@@ -1,6 +1,6 @@
 {
   "name": "iframe-connect",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,9 @@
     "esnext": true,
     "envs": [
       "browser"
+    ],
+    "globals": [
+      "define"
     ],
     "rules": {
       "import/extensions": "off",
