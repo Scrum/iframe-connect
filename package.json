@@ -11,13 +11,13 @@
   "author": "scrum",
   "license": "ISC",
   "devDependencies": {
-    "ava": "^3.1.0",
+    "ava": "^5.2.0",
     "express": "^4.17.1",
     "jsdom": "^16.0.1",
     "morgan": "^1.9.1",
     "nodemon": "^2.0.2",
     "test-listen": "^1.1.0",
-    "xo": "^0.25.3"
+    "xo": "^0.53.1"
   },
   "xo": {
     "esnext": true,
